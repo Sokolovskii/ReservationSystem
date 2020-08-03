@@ -1,0 +1,52 @@
+﻿@using ReservationSystem.Services.ServiceResponse
+@model ReservationSystem.Models.DTOModels.CinemaViewDto
+
+@if (@Model.Cinema.Code != ServiceResponseCode.Ok || @Model.FilmList.Code != ServiceResponseCode.Ok
+     || @Model.HallList.Code != ServiceResponseCode.Ok)
+{
+    @Url.RouteUrl(new {Controller = "Cinema", Action = "Error"});
+}
+<title>Кинотеатр @Model.Cinema.Data.Name</title>
+
+<h3 class="h3Container">@Model.Cinema.Data.Name</h3>
+
+<div class="flexContainer">
+
+    <div class="cinemaContainer">
+        <div>
+            <h5>Список фильмов</h5>
+        </div>
+        <ul>
+            @foreach (var film in Model.FilmList.Data)
+            {
+                <li class="liContainer">
+                    <div>
+                        <a href="@Url.RouteUrl(new {Controller = "Film", Action = "Film", filmId = film.Id, cinemaId = Model.Cinema.Data.Id})">@film.Name</a>
+                    </div>
+                    <div>
+                        Жанр: @film.Genre
+                    </div>
+                    <div>
+                        Продолжительность: @film.Duration
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <div class="cinemaContainer">
+        <div>
+            <h5>Список залов</h5>
+        </div>
+        <ul>
+            @foreach (var hall in Model.HallList.Data)
+            {
+                <li class="liContainer">
+                    <div>
+                        <a href="@Url.RouteUrl(new {Controller = "Hall", Action = "Hall", hallId = hall.Id,})">@hall.Name</a>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

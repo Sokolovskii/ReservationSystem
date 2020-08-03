@@ -1,0 +1,40 @@
+﻿
+<dialog id="sessionModal">
+    
+    <div style="width:100%">
+        <div id="sessionTempModal"></div>
+    </div>
+    <div class="flexSessionContainer">
+        <table>
+            <tr>
+                <th class="selectedPlaceExample"></th>
+                <th>-место, запланированное к бронированию</th>
+                <th class="sessionTableCellReservedExample"></th>
+                <th>-Забронированное место</th>
+                <th class="sessionTableCellReservedByUserExample"></th>
+                <th>-место, забронированное вами</th>
+            </tr>
+        </table>
+    </div>
+    <div>
+            <div class="title">Схема зала:</div>
+        </div>
+    <div class="modalTableHallBorder">
+        <div>
+            <div class="modalDisplay">
+                Экран
+            </div>
+        </div>
+        <div class="sessionTableContainer">
+            <table id="TableTemptateModal" class="sessionTable" align="center"></table>
+        </div>
+    </div>
+    
+
+    <div>
+        <button type="button" style="width:20%" id="closeSessionModal">Закрыть</button>
+        <button type="button" style="width:20%" id="cancelReservationModal">Сбросить</button>
+        <button type="button" style="width:20%" id="unreservationModal">Отменить бронь</button>
+        <button type="submit" id="reservePlaces" style="float: right;width:38%">Забронировать место</button>
+    </div>
+</dialog>

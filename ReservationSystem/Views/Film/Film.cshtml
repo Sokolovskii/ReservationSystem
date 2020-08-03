@@ -1,0 +1,73 @@
+﻿@using ReservationSystem.Services.ServiceResponse
+@model ReservationSystem.Models.DTOModels.FilmViewDto
+
+@if (@Model.Film.Code != ServiceResponseCode.Ok || @Model.Halls.Code != ServiceResponseCode.Ok
+     || @Model.Sessions.Code != ServiceResponseCode.Ok)
+{
+    @Url.RouteUrl(new {Controller = "Film", Action = "Error"});
+}
+
+
+<div class="flexContainer">
+    <div class="info">
+        <div class="filmItem">
+            <div class="bold">Название:&nbsp</div>
+            <div>@Model.Film.Data.Name</div>
+        </div>
+        <div class="filmItem">
+            <div class="bold">Жанр:&nbsp</div>
+            <div>@Model.Film.Data.Genre</div>
+        </div>
+        <div class="filmItem">
+            <div class="bold">Продолжительность:&nbsp</div>
+            <div>@Model.Film.Data.Duration</div>
+        </div>
+        <div class="filmItem">
+            <div class="bold">Страна:&nbsp</div>
+            <div>@Model.Film.Data.Country</div>
+        </div>
+        <div class="filmItem">
+            <div class="bold">Режиссер:&nbsp</div>
+            <div>@Model.Film.Data.Producer</div>
+        </div>
+        <div class="filmItem">
+            <div class="bold">Год:&nbsp</div>
+            <div>@Model.Film.Data.YearOfProduction</div>
+        </div>
+        <div class="filmItem">
+            <div class="bold">Описание:&nbsp</div>
+            <div>@Model.Film.Data.Description</div>
+        </div>
+    </div>
+
+    <div class="tableBorder">
+        <table class="table">
+            <tr>
+                <th style="display: none">sessionId</th>
+                <th>Дата сеанса</th>
+                <th>Начало сеанса</th>
+                <th>Конец сеанса</th><th>Стоимость сеанса</th>
+                <th>Название зала</th>
+                <th style="display: none">hallId</th>
+                <th style="display: none">filmId</th>
+            </tr>
+            @foreach (var session in @Model.Sessions.Data)
+            {
+        <tr class="borderTopRow">
+            <td style="display: none">@session.Id</td>
+            <td>@session.Date</td>
+            <td>@session.TimeOfBegin</td>
+            <td>@session.TimeOfEnd</td>
+            <td>@session.Cost</td>
+            <td>@Model.Halls.Data.Single(h => h.Id == session.HallId).Name</td>
+            <td><button data-sessionId="@session.Id" data-filmId="@Model.Film.Data.Id" class="reservationButton">Зарезервировать место</button></td>
+            <td><button onclick="location.href='@Url.RouteUrl(new {Controller = "Hall", Action = "Hall", hallId=@Model.Halls.Data.Single(h => h.Id == session.HallId).Id})'">Перейти к залу</button></td>
+        </tr>
+            }
+        </table>
+    </div>
+</div>
+
+<div>
+    @{await Html.RenderPartialAsync("SessionModal");}
+</div>

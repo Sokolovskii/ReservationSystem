@@ -1,0 +1,35 @@
+﻿@model ReservationSystem.Models.DTOModels.HallViewDto
+<dialog id="demoHallModal">
+    <div>
+        <div class="title">Схема зала:</div>
+    </div>
+    <div class="tableHallBorder">
+        <div>
+            <div class="display">
+                Экран
+            </div>
+        </div>
+        <table align="center">
+            @{
+                var count = @Model.Places.Data.Max(p => p.Row);
+            }
+            @for (var i = 1; i <= count; i++)
+            {
+                var row = from place in @Model.Places.Data
+                    where place.Row == i
+                    select place;
+                <table>
+                    <tr class="modalHallRow">
+                        @foreach (var r in row)
+                        {
+                            <td class="sessionTableCell">@r.Row.@r.Column</td>
+                        }
+                    </tr>
+                </table>
+            }
+        </table>
+    </div>
+    <div>
+        <button type="button" class="demoHallButton" id="closeDemoHallModal">Закрыть</button>
+    </div>
+</dialog>

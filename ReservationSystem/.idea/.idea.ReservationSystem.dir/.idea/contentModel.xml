@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Sokolovskiy.AS\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Sokolovskiy.AS\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Sokolovskiy.AS\RiderProjects\reservation-system\ReservationSystem" t="IncludeRecursive">
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="ConnectionStringOption.cs" t="Include" />
+      <e p="Controllers" t="Include">
+        <e p="CinemaController" t="Include">
+          <e p="CinemaController.cs" t="Include" />
+          <e p="CinemaControllerAPI.cs" t="Include" />
+        </e>
+        <e p="FilmController" t="Include">
+          <e p="FilmController.cs" t="Include" />
+          <e p="FilmControllerAPI.cs" t="Include" />
+        </e>
+        <e p="HallController" t="Include">
+          <e p="HallController.cs" t="Include" />
+          <e p="HallControllerAPI.cs" t="Include" />
+        </e>
+        <e p="PersonController" t="Include">
+          <e p="PersonController.cs" t="Include" />
+          <e p="PersonControllerAPI.cs" t="Include" />
+        </e>
+        <e p="PlaceController" t="Include">
+          <e p="PlaceController.cs" t="Include" />
+          <e p="PlaceControllerAPI.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Exceptions" t="Include">
+        <e p="ObjectNotFoundException.cs" t="Include" />
+      </e>
+      <e p="Models" t="Include">
+        <e p="DomainModels" t="Include">
+          <e p="Cinema.cs" t="Include" />
+          <e p="Film.cs" t="Include" />
+          <e p="Hall.cs" t="Include" />
+          <e p="Person.cs" t="Include" />
+          <e p="PlaceInHall.cs" t="Include" />
+          <e p="Session.cs" t="Include" />
+        </e>
+        <e p="DTOModels" t="Include">
+          <e p="CinemaDto.cs" t="Include" />
+          <e p="CinemasViewDto.cs" t="Include" />
+          <e p="CinemaViewDto.cs" t="Include" />
+          <e p="FilmDto.cs" t="Include" />
+          <e p="FilmViewDto.cs" t="Include" />
+          <e p="HallDto.cs" t="Include" />
+          <e p="HallViewDto.cs" t="Include" />
+          <e p="PartialFilmDTO.cs" t="Include" />
+          <e p="PartialHallDto.cs" t="Include" />
+          <e p="PersonDto.cs" t="Include" />
+          <e p="PersonLoginDTO.cs" t="Include" />
+          <e p="PersonPassLessDto.cs" t="Include" />
+          <e p="PlaceDto.cs" t="Include" />
+          <e p="PlaceInHallDto.cs" t="Include" />
+          <e p="SessionDto.cs" t="Include" />
+          <e p="SessionsToReserveDTO.cs" t="Include" />
+          <e p="SessionToUnreservedDTO.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="ReservationSystem.AssemblyInfo.cs" t="Include" />
+            <e p="ReservationSystem.RazorAssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="out" t="Include">
+        <e p="Cinema.js" t="Include" />
+        <e p="Cinema.js.map" t="Include" />
+        <e p="DataClasses.js" t="Include" />
+        <e p="DataClasses.js.map" t="Include" />
+        <e p="DialogModalManager.js" t="Include" />
+        <e p="DialogModalManager.js.map" t="Include" />
+        <e p="ExampleModalManager.js" t="Include" />
+        <e p="ExampleModalManager.js.map" t="Include" />
+        <e p="GetPostRequest.js" t="Include" />
+        <e p="GetPostRequest.js.map" t="Include" />
+        <e p="Main.js" t="Include" />
+        <e p="Main.js.map" t="Include" />
+        <e p="PersonManager.js" t="Include" />
+        <e p="PersonManager.js.map" t="Include" />
+        <e p="PersonRepository.js" t="Include" />
+        <e p="PersonRepository.js.map" t="Include" />
+        <e p="ServiceResponce.js" t="Include" />
+        <e p="ServiceResponce.js.map" t="Include" />
+        <e p="SessionExampleRepository.js" t="Include" />
+        <e p="SessionExampleRepository.js.map" t="Include" />
+        <e p="SessionModalRepository.js" t="Include" />
+        <e p="SessionModalRepository.js.map" t="Include" />
+      </e>
+      <e p="package-lock.json" t="Include" />
+      <e p="package.json" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="Repository" t="Include">
+        <e p="CinemaRepository" t="Include">
+          <e p="ICinemaRepository.cs" t="Include" />
+          <e p="СinemaRepository.cs" t="Include" />
+        </e>
+        <e p="DataReaderExtencions.cs" t="Include" />
+        <e p="Db.cs" t="Include" />
+        <e p="DbParam.cs" t="Include" />
+        <e p="FilmRepository" t="Include">
+          <e p="FilmRepository.cs" t="Include" />
+          <e p="IFilmRepository.cs" t="Include" />
+        </e>
+        <e p="HallRepository" t="Include">
+          <e p="HallRepository.cs" t="Include" />
+          <e p="IHallRepository.cs" t="Include" />
+        </e>
+        <e p="PersonRepository" t="Include">
+          <e p="IPersonRepository.cs" t="Include" />
+          <e p="PersonRepository.cs" t="Include" />
+        </e>
+        <e p="PlaceRepository" t="Include">
+          <e p="IPlaceRepository.cs" t="Include" />
+          <e p="PlaceRepository.cs" t="Include" />
+        </e>
+        <e p="SessionRepository" t="Include">
+          <e p="ISessionRepository.cs" t="Include" />
+          <e p="SessionRepository.cs" t="Include" />
+        </e>
+      </e>
+      <e p="ReservationSystem.csproj" t="IncludeRecursive" />
+      <e p="Services" t="Include">
+        <e p="BaseService.cs" t="Include" />
+        <e p="CinemaService" t="Include">
+          <e p="CinemaService.cs" t="Include" />
+          <e p="ICinemaService.cs" t="Include" />
+        </e>
+        <e p="FilmService" t="Include">
+          <e p="FilmService.cs" t="Include" />
+          <e p="IFilmService.cs" t="Include" />
+        </e>
+        <e p="HallService" t="Include">
+          <e p="HallService.cs" t="Include" />
+          <e p="IHallService.cs" t="Include" />
+        </e>
+        <e p="PersonService" t="Include">
+          <e p="IPersonService.cs" t="Include" />
+          <e p="PersonService.cs" t="Include" />
+        </e>
+        <e p="PlaceService" t="Include">
+          <e p="IPlaceService.cs" t="Include" />
+          <e p="PlaceService.cs" t="Include" />
+        </e>
+        <e p="ServiceResponse" t="Include">
+          <e p="Generic" t="Include">
+            <e p="ServiceResponseGeneric.cs" t="Include" />
+          </e>
+          <e p="NonGeneric" t="Include">
+            <e p="ServiceResponseNonGeneric.cs" t="Include" />
+          </e>
+          <e p="ServiceResponseCode.cs" t="Include" />
+          <e p="WarningMessages.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Startup.cs" t="Include" />
+      <e p="tsconfig.json" t="Include" />
+      <e p="Views" t="Include">
+        <e p="_ViewImports.cshtml" t="Include" />
+        <e p="_ViewStart.cshtml" t="Include" />
+        <e p="Cinema" t="Include">
+          <e p="Cinema.cshtml" t="Include" />
+          <e p="Cinemas.cshtml" t="Include" />
+        </e>
+        <e p="Film" t="Include">
+          <e p="Film.cshtml" t="Include" />
+        </e>
+        <e p="Hall" t="Include">
+          <e p="Hall.cshtml" t="Include" />
+        </e>
+        <e p="Home" t="Include">
+          <e p="Index.cshtml" t="Include" />
+          <e p="Privacy.cshtml" t="Include" />
+        </e>
+        <e p="Person" t="Include">
+          <e p="Person.cshtml" t="Include" />
+        </e>
+        <e p="Place" t="Include">
+          <e p="Place.cshtml" t="Include" />
+        </e>
+        <e p="Shared" t="Include">
+          <e p="_Layout.cshtml" t="Include" />
+          <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+          <e p="ErrorView.cshtml" t="Include" />
+          <e p="HallDemoModal.cshtml" t="Include" />
+          <e p="LogInModal.cshtml" t="Include" />
+          <e p="RegistrationModal.cshtml" t="Include" />
+          <e p="SessionModal.cshtml" t="Include" />
+        </e>
+      </e>
+      <e p="webpack.config.js" t="Include" />
+      <e p="wwwroot" t="Include">
+        <e p="css" t="Include">
+          <e p="site.css" t="Include" />
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="js" t="Include">
+          <e p="Cinema.js" t="Include" />
+          <e p="Cinema.js.map" t="Include" />
+          <e p="Cinema.ts" t="Include" />
+          <e p="DataClasses.js" t="Include" />
+          <e p="DataClasses.js.map" t="Include" />
+          <e p="DataClasses.ts" t="Include" />
+          <e p="DialogModalManager.js" t="Include" />
+          <e p="DialogModalManager.js.map" t="Include" />
+          <e p="DialogModalManager.ts" t="Include" />
+          <e p="ExampleModalManager.js" t="Include" />
+          <e p="ExampleModalManager.js.map" t="Include" />
+          <e p="ExampleModalManager.ts" t="Include" />
+          <e p="GetPostRequest.js" t="Include" />
+          <e p="GetPostRequest.js.map" t="Include" />
+          <e p="GetPostRequest.ts" t="Include" />
+          <e p="Main.js" t="Include" />
+          <e p="Main.js.map" t="Include" />
+          <e p="Main.ts" t="Include" />
+          <e p="PersonManager.js" t="Include" />
+          <e p="PersonManager.js.map" t="Include" />
+          <e p="PersonManager.ts" t="Include" />
+          <e p="PersonRepository.ts" t="Include" />
+          <e p="ServiceResponce.js" t="Include" />
+          <e p="ServiceResponce.js.map" t="Include" />
+          <e p="ServiceResponce.ts" t="Include" />
+          <e p="SessionExampleRepository.js" t="Include" />
+          <e p="SessionExampleRepository.js.map" t="Include" />
+          <e p="SessionExampleRepository.ts" t="Include" />
+          <e p="SessionModalRepository.js" t="Include" />
+          <e p="SessionModalRepository.js.map" t="Include" />
+          <e p="SessionModalRepository.ts" t="Include" />
+          <e p="site.js" t="Include" />
+        </e>
+        <e p="lib" t="Include">
+          <e p="bootstrap" t="Include">
+            <e p="dist" t="Include">
+              <e p="css" t="Include">
+                <e p="bootstrap-grid.css" t="Include" />
+                <e p="bootstrap-grid.css.map" t="Include" />
+                <e p="bootstrap-grid.min.css" t="Include" />
+                <e p="bootstrap-grid.min.css.map" t="Include" />
+                <e p="bootstrap-reboot.css" t="Include" />
+                <e p="bootstrap-reboot.css.map" t="Include" />
+                <e p="bootstrap-reboot.min.css" t="Include" />
+                <e p="bootstrap-reboot.min.css.map" t="Include" />
+                <e p="bootstrap.css" t="Include" />
+                <e p="bootstrap.css.map" t="Include" />
+                <e p="bootstrap.min.css" t="Include" />
+                <e p="bootstrap.min.css.map" t="Include" />
+              </e>
+              <e p="js" t="Include">
+                <e p="bootstrap.bundle.js" t="Include" />
+                <e p="bootstrap.bundle.js.map" t="Include" />
+                <e p="bootstrap.bundle.min.js" t="Include" />
+                <e p="bootstrap.bundle.min.js.map" t="Include" />
+                <e p="bootstrap.js" t="Include" />
+                <e p="bootstrap.js.map" t="Include" />
+                <e p="bootstrap.min.js" t="Include" />
+                <e p="bootstrap.min.js.map" t="Include" />
+              </e>
+            </e>
+            <e p="LICENSE" t="Include" />
+          </e>
+          <e p="jquery" t="Include">
+            <e p="dist" t="Include">
+              <e p="jquery.js" t="Include" />
+              <e p="jquery.min.js" t="Include" />
+              <e p="jquery.min.map" t="Include" />
+            </e>
+            <e p="LICENSE.txt" t="Include" />
+          </e>
+          <e p="jquery-validation" t="Include">
+            <e p="dist" t="Include">
+              <e p="additional-methods.js" t="Include" />
+              <e p="additional-methods.min.js" t="Include" />
+              <e p="jquery.validate.js" t="Include" />
+              <e p="jquery.validate.min.js" t="Include" />
+            </e>
+            <e p="LICENSE.md" t="Include" />
+          </e>
+          <e p="jquery-validation-unobtrusive" t="Include">
+            <e p="jquery.validate.unobtrusive.js" t="Include" />
+            <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+            <e p="LICENSE.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Templates" t="Include">
+          <e p="rowTemplate.html" t="Include" />
+          <e p="sessionTemplate.html" t="Include" />
+        </e>
+        <e p="TScompiled" t="Include">
+          <e p="main.bundle.js" t="Include" />
+        </e>
+      </e>
+    </e>
+  </component>
+</project>

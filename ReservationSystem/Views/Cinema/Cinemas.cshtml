@@ -1,0 +1,19 @@
+﻿@using ReservationSystem.Services.ServiceResponse
+@model ReservationSystem.Models.DTOModels.CinemasViewDto
+
+@if (@Model.Cinemas.Code != ServiceResponseCode.Ok)
+{
+    @Url.RouteUrl(new {Controller = "Cinema", Action = "Error"});
+}
+
+<h2>Список кинотеатров</h2>
+<div>
+    @foreach (var cinema in @Model.Cinemas.Data)
+    {
+        <div class="cinemaItem">
+            <div>
+                <a href="@Url.RouteUrl(new {Controller = "Cinema", Action = "Cinema", cinemaId = @cinema.Id})">@cinema.Name</a>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,13 @@
+﻿<table>
+    <tr>
+        {{for Places ~currentUserId=CurrentUserId}}
+        {{if userId === 0}}
+            <td onclick="manager.SelectPlace(event, {{:id}}, {{:row}}, {{:column}})" class="sessionTableCell">{{:row}}.{{:column}}</td>
+        {{else userId === ~currentUserId}}
+            <td class="sessionTableCellReservedByUser">{{:row}}.{{:column}}</td>
+        {{else}}
+            <td class="sessionTableCellReserved">{{:row}}.{{:column}}</td>
+        {{/if}}
+        {{/for}}
+    </tr>
+</table>

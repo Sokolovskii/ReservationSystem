@@ -1,0 +1,63 @@
+﻿@using ReservationSystem.Services.ServiceResponse
+@model ReservationSystem.Models.DTOModels.HallViewDto
+ 
+@if (@Model.Films.Code != ServiceResponseCode.Ok || @Model.Hall.Code != ServiceResponseCode.Ok
+     || @Model.Places.Code != ServiceResponseCode.Ok || @Model.Sessions.Code != ServiceResponseCode.Ok)
+{
+    @Url.RouteUrl(new {Controller = "Hall", Action = "Error"});
+}
+
+<div class="flexContainer">
+    <div class="info">
+        <div class="item">
+            <div class="bold">Название:&nbsp</div>
+            <div>@Model.Hall.Data.Name</div>
+        </div>
+        <div class="item">
+            <div class="bold">Число мест:&nbsp</div>
+            <div>@Model.Hall.Data.PlacesCount</div>
+        </div>
+        <div class="item">
+            <div class="bold">Описание:&nbsp</div>
+            <div>@Model.Hall.Data.Description</div>
+        </div>
+        <div class="item">
+            <button id="demoHallModalOpen" class="bold">Схема зала</button>
+        </div>
+        
+    </div>
+
+    <div class="tableBorder">
+        <table class="table">
+            <tr>
+                <th style="display: none"></th>
+                <th>Дата сеанса</th>
+                <th>Начало сеанса</th>
+                <th>Конец сеанса</th><th>Стоимость сеанса</th>
+                <th>Название фильма</th>
+                <th>Жанр</th>
+                <th style="display: none"></th>
+            </tr>
+            @foreach (var session in @Model.Sessions.Data)
+            {
+                <tr class="borderTopRow">
+                    <td style="display: none">@session.Id</td>
+                    <td>@session.Date</td>
+                    <td>@session.TimeOfBegin</td>
+                    <td>@session.TimeOfEnd</td>
+                    <td>@session.Cost</td>
+                    <td>@Model.Films.Data.Single(f => f.Id == session.FilmId).Name</td>
+                    <td>@Model.Films.Data.Single(f => f.Id == session.FilmId).Genre</td>
+                    <td><button data-sessionId="@session.Id" data-filmId="@Model.Films.Data.Single(h => h.Id == session.FilmId).Id" class="reservationButton">Зарезервировать место</button></td>
+                    <td><button class="tableButton" onclick="location.href='@Url.RouteUrl(new {Controller = "Film", Action = "Film",filmId=@Model.Films.Data.Single(h => h.Id == session.FilmId).Id, cinemaId=@Model.Hall.Data.CinemaId})'">Перейти к фильму</button></td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+
+<div>
+    @{await Html.RenderPartialAsync("SessionModal");}
+    @{await Html.RenderPartialAsync("HallDemoModal");}
+</div>
